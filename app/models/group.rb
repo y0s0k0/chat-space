@@ -3,7 +3,7 @@ class Group < ApplicationRecord
   has_many :members
   has_many :messages
   
-  validates :name, presence: true
+  validates :title, presence: true
 
   def show_last_message
     if (last_message = messages.last).present?
