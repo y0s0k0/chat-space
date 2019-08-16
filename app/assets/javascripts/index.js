@@ -1,9 +1,9 @@
 $(function() {
   function appendUser(user) {
-    html = user.id == $(".current-user").val() ? "" : `<div class="chat-group-user clearfix">
-                                                        <p class="chat-group-user__name">${user.name}</p>
-                                                        <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
-                                                      </div>`;
+    html =  `<div class="chat-group-user clearfix">
+              <p class="chat-group-user__name">${user.name}</p>
+              <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
+            </div>`;
 
     return html;
   };
