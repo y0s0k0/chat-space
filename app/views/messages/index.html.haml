@@ -13,7 +13,7 @@
             - @group.users.each do |user|
               = user.name
       .main-header__edit-btn
-        = link_to 'Edit', edit_group_path(@group.id)
+        = link_to 'Edit', edit_group_path(@group.id), data: {"turbolinks" => false}
     .messages
       = render partial: "message", collection: @messages
     .form#form
